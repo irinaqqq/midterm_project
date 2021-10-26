@@ -4,6 +4,12 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
@@ -19,11 +25,9 @@
   </head>
   <body>
     <header>
-      <div class="class1">
         <a href="home.html" class="logo">ZENSHEEP</a>
 
         <ul>
-          <li><a href="home.html">HOME</a></li>
           <li><a href="services.html">SERVICES</a></li>
           <li><a href="los.html">LIFESTYLE OF SHEEPS</a></li>
           <li><a href="order.html">ORDER</a></li>
@@ -45,87 +49,63 @@
             </a>
           </li>
         </ul>
-      </div>
 
       
     </header>
 
-    <div class="container">
-      <div class="description">
-        <h2 class="heading-secondary">
-          Services that we provide
-        </h2>
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ullam harum, vel quia possimus delectus autem cupiditate est perferendis animi, reiciendis facere! Quae, nisi nobis assumenda perspiciatis omnis consequatur sequi doloribus.</p>
+    <div class="class2">
+      <div id="demo" class="carousel slide" data-ride="carousel">
+
+        <!-- Indicators -->
+        <ul class="carousel-indicators">
+          <li data-target="#demo" data-slide-to="0" class="active"></li>
+          <li data-target="#demo" data-slide-to="1"></li>
+          <li data-target="#demo" data-slide-to="2"></li>
+        </ul>
+      
+        <!-- The slideshow -->
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="class2">
+            <h1 class="class3">
+              <span>Quirdaq</span>
+            </h1>
+          </div>
+            <img src="https://i.ytimg.com/vi/7MRKrz_Bu8g/maxresdefault.jpg" width="600px" alt="">
+          </div>
+          <div class="carousel-item">
+            <div class="class2">
+              <h1 class="class3">
+                <span>Zhun kesu</span>
+              </h1>
+            </div>
+            <img src="https://ovcevod.com/wp-content/uploads/2019/02/img_6033101.jpg" width="600px" alt="Chicago">
+          </div>
+          <div class="carousel-item">
+            <div class="class2">
+              <h1 class="class3">
+                <span>Qurban shalu</span>
+              </h1>
+            </div>
+            <img src="https://kyn.kz/wp-content/uploads/2018/08/фото-114.jpg" width="600px">
+          </div>
+        </div>
+      
+        
+
+        <!-- Left and right controls -->
+        <a class="carousel-control-prev" href="#demo" data-slide="prev">
+          <span class="carousel-control-prev-icon"></span>
+        </a>
+        <a class="carousel-control-next" href="#demo" data-slide="next">
+          <span class="carousel-control-next-icon"></span>
+        </a>
+      
       </div>
 
-      <div class="cards">
-        <div class="card">
-          <div class="icon">
-            <img src="img/img-1.png" alt="Image 1">
-          </div>
 
-          <h3 class="heading-tertiary">Marketing</h3>
-          <p>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corporis ipsam earum eaque facere saepe neque.
-          </p>
-        </div>
-
-        <div class="card">
-          <div class="icon">
-            <img src="img/img-2.png" alt="Image 2">
-          </div>
-
-          <h3 class="heading-tertiary">App Development</h3>
-          <p>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corporis ipsam earum eaque facere saepe neque.
-          </p>
-        </div>
-
-        <div class="card">
-          <div class="icon">
-            <img src="img/img-3.png" alt="Image 3">
-          </div>
-
-          <h3 class="heading-tertiary">Error Fixing</h3>
-          <p>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corporis ipsam earum eaque facere saepe neque.
-          </p>
-        </div>
-
-        <div class="card">
-          <div class="icon">
-            <img src="img/img-4.png" alt="Image 4">
-          </div>
-
-          <h3 class="heading-tertiary">Design</h3>
-          <p>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corporis ipsam earum eaque facere saepe neque.
-          </p>
-        </div>
-
-        <div class="card">
-          <div class="icon">
-            <img src="img/img-5.png" alt="Image 5">
-          </div>
-
-          <h3 class="heading-tertiary">Development</h3>
-          <p>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corporis ipsam earum eaque facere saepe neque.
-          </p>
-        </div>
-
-        <div class="card">
-          <div class="icon">
-            <img src="img/img-6.png" alt="Image 6">
-          </div>
-
-          <h3 class="heading-tertiary">SEO</h3>
-          <p>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corporis ipsam earum eaque facere saepe neque.
-          </p>
-        </div>
-      </div>
-
+      
     </div>
+
   </body>
 </html>
