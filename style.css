@@ -1,77 +1,74 @@
 body {
   font-family: 'Open Sans', sans-serif;
-  line-height: normal;
-  background-image: url(https://images.wallpaperscraft.ru/image/single/ovtsa_sobaka_trava_95236_1920x1080.jpg);
+  background-image: url("image/grass2.png");
+  background-size: cover;
+  /* background-repeat: no-repeat; */
 }
-
  /* цвет надписей в полоске */
 a, a:-webkit-any-link {
   color: rgb(255, 255, 255) ;
   text-decoration: none ;
 }
- 
-/* полоска */
-header {
-  min-height: 104px;
-  min-width: 1000px;
-  background-color: rgb(0, 0, 0);
-  padding-left: 5%;
-  padding-right: 5%;
+
+header {  
+  background-color: rgb(0, 0, 0); 
   display:flex;
+  height: 100px;
   align-items: center;
   justify-content: space-between;
-}
 
+}
 /* надписи в полоске */
 header ul
 {
-  
-  padding-top: 1rem;
   list-style: none;
   display: flex;
+  margin-top: auto;
+  margin-bottom: auto;
 }
-
 /* надписи */
 header ul li a {
   padding-right: 2rem;
 }
-/* лого */
 .logo {
-  font-size: 2rem;
+  margin-left: 1rem;
+  font-size: 3rem;
 }
+h1 {
+	font-size: 80px;
+	margin-bottom: 30px;
+  margin-top: 30px;
+}
+h3, p {	margin-bottom: 30px;}
+button {
+	border: none;
+	padding: 0.625rem 1.25rem;
+	border-radius:3.125rem;
+	color: rgb(0, 0, 0);
+	background: rgb(255, 255, 255);
+	margin-bottom: 3.125rem;
+  cursor: pointer;
 
+}
+.btn {
+  color:rgb(255, 255, 255);
+  background: rgb(0, 0, 0);
+	padding: 0.625rem 1.25rem;
+  position: fixed;
+  bottom: 0.625rem;
+}
 /* расположение надписей в центре */
-.class2 {
+.class {
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
 }
-
-/* надпись в центре */
-.class3 {
-  color: rgb(0, 0, 0);
-  height: 200px;
-  width: 500px;
-  display: flex;
-  flex-direction: column;
-}
-.class4 {
-  font-size: medium;
-  color: rgb(0, 0, 0);
-  height: 50px;
-  width: 500px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
 /* фон надписей */
-.class3 span, .class4 span, .class5 span {
+ .class, .container {
 	background-color: rgba(247, 235, 235, 0.5);
 	box-shadow: -10px 0 0 rgba(245, 227, 227, 0.5), 10px 0 0 rgba(255, 231, 231, 0.5);
 }
-
 /* карточки перевертышы */
 .mycards{
   display: flex;
@@ -102,27 +99,14 @@ header ul li a {
 .mycard:hover .mycard-back{
   transform: rotateY(0); 
 }
-
 /* надписи за карточкой */
 .class5 {
-  background-image: url(https://images.wallpaperscraft.ru/image/single/ovtsa_kudri_trava_108810_300x168.jpg);
-  padding: 30px;
+  background-color: #ccc;
+  width: 300;
+  height: 20;
+  /* padding: 30px; */
 }
 
-.btn {
-  color:rgb(255, 255, 255);
-  background-color: rgb(0, 0, 0);
-  padding: 0.5rem 1.5rem;
-  position: fixed;
-  bottom: 10px;
-  left: 52%;
-  margin-left: -104.5px;
-}
-
-
-
-
-/* Style inputs */
 input[type=text], select, textarea {
   width: 100%;
   padding: 12px;
@@ -131,49 +115,33 @@ input[type=text], select, textarea {
   margin-bottom: 16px;
   resize: vertical;
 }
-
 input[type=submit] {
-  background-color: #04AA6D;
+  background-color: #000000;
   color: white;
   padding: 12px 20px;
   border: none;
   cursor: pointer;
 }
-
-input[type=submit]:hover {
-  background-color: #45a049;
-}
-
-/* Style the container/contact section */
 .container {
   border-radius: 5px;
-  background-color: #f2f2f2;
   padding: 10px;
 }
-
-/* Create two columns that float next to eachother */
 .column {
   float: left;
   width: 50%;
   margin-top: 6px;
   padding: 20px;
 }
-
-/* Clear floats after the columns */
 .row:after {
   content: "";
   display: table;
   clear: both;
 }
-
-/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 600px) {
-  .column, input[type=submit] {
-    width: 100%;
-    margin-top: 0;
-  }
+.carousel-inner{
+  display: flex;
+  align-items: center;
+  text-align: center;
 }
-
 .carousel-control-next, .carousel-control-prev {
   height: 750px;
   max-width: 15%;
@@ -184,4 +152,10 @@ input[type=submit]:hover {
 }
 .table>:not(caption)>*>* {
   background-color: rgb(0, 0, 0);
+}
+@media screen and (max-width: 600px) {
+  .column, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
 }
