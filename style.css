@@ -148,7 +148,8 @@ input[type=submit] {
 }
 .video{
   padding-top: 5rem;
-  padding-left: 34%;
+  display: flex;
+  justify-content: center;
 }
 .table>:not(caption)>*>* {
   background-color: rgb(0, 0, 0);
